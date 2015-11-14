@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* colors */
+/* fonts */
+body {
+  margin: 0px;
+  padding: 0px; }
+
+#top-content .intro-image img {
+  width: 100%; }
+
+#top-content .intro-image {
+  margin-bottom: -3px; }
+
+.navigation .lorem-logo {
+  position: relative; }
+
+.navigation .lorem-logo-space {
+  margin: 0px 20px; }
+
+.navigation {
+  height: 87px;
+  background-color: #3f3f3f;
+  text-align: center; }
+  .navigation ul {
+    margin: 0px;
+    padding: 0px;
+    margin-top: -120px; }
+    .navigation ul li {
+      display: inline-block;
+      list-style: none;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 10pt;
+      line-height: 70pt;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding-left: 17px;
+      padding-right: 17px;
+      text-transform: uppercase; }
+
+/* ABOUT */
+.about {
+  background-color: #eff3f3;
+  padding: 105px 135px 90px 135px; }
+  .about h3 {
+    font-size: 18pt;
+    line-height: 36pt;
+    color: #555555;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 300; }
+
+.services div {
+  float: left;
+  width: 19%;
+  padding-top: 110px; }
+
+/* FEATURED PROJECTS */
+.featured-projects {
+  background-color: #f9c741;
+  width: 100%;
+  height: 1100px;
+  text-align: center; }
+
+/* text */
+.yellow-bold-text {
+  color: #f9c741;
+  font-weight: 400; }
+
+.clearfix {
+  clear: both; }
