@@ -1,0 +1,33 @@
+{
+  "name": "lorem-studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fcorrea16/lorem-studio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcorrea16/lorem-studio/issues"
+  },
+  "homepage": "https://github.com/fcorrea16/lorem-studio",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.1",
+    "method-override": "^2.3.4",
+    "mongodb": "^2.0.48",
+    "mongoose": "^4.2.5",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0"
+  }
+}
