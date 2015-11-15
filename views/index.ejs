@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<% include ../views/partials/head %>
-
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
 	<!-- <h1>title</h1> -->
@@ -70,15 +70,15 @@
 				<button><%= filter.name %></button>
 			<% }); %>
 		</div>
+		<div class="images-projects">
 
+
+		</div>
 
 		<button>Load More</button>
 	</div>
 
-
-	<div class="map">
-
-	</div>
+	<div id="map"></div>
 
 	<div class="contact">
 		<h2>Get in Touch</h2>
@@ -126,7 +126,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- script for live reload -->
     <script src="//localhost:35729/livereload.js"></script> 
+<script>
+  function initialize() {
+    var mapCanvas = document.getElementById('map');
+    var myLatlng = new google.maps.LatLng(-7.642151, 112.906694);
+    var mapOptions = {
+      center: myLatlng,
+       scrollwheel: false,
+      zoom: 17,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        animation: google.maps.Animation.DROP
+    });
+    marker.setMap(map);
+  }
 
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
     </body>
 </html>

@@ -37,6 +37,7 @@ app.get('/', function (req, res) {
         { name: 'Opencart', id: 4 },
         { name: 'Logo', id: 5 },
         { name: 'Print', id: 6 }
+        
     ];
 
   res.render('index', {
