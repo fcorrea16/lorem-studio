@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
 @import 'reset';
 
@@ -6,7 +6,9 @@
 /* colors */
 $darkgrey: #3f3f3f;
 $yellow: #f9c741;
-$textgrey: #555555;
+$darkgrey: #555555;
+$grey: #3f3f3f;
+$lightgrey: #999999;
 
 
 /* fonts */
@@ -16,6 +18,10 @@ $navFontSize: 10pt;
 $headingfont: 'Raleway', sans-serif;
 $sizeH3: 18pt;
 $lineHeightH3: 36pt;
+
+
+
+
 
 
 
@@ -75,12 +81,12 @@ body {
 
 .about{
 	background-color: #eff3f3;
-	padding: 105px 135px 90px 135px;
+	padding: 10% 5%;
 
 	h3{
 		font-size: $sizeH3;
 		line-height: $lineHeightH3;
-		color: $textgrey;
+		color: $darkgrey;
 		font-family: $headingfont;
 		text-align: center;
 		font-weight: 300;
@@ -89,8 +95,20 @@ body {
 
 .services div{
 	float: left;
-	width: 19%;
+	width: 17%;
 	padding-top: 110px;
+	text-align: center;
+	margin-right: 3%;
+}
+
+
+.services img{
+	margin-bottom: 30px;
+}
+
+
+.services h4{
+	margin-bottom: 15px;
 }
 
 
@@ -102,19 +120,59 @@ body {
 	width: 100%;
 	height: 1100px;
 	text-align: center;
+
+	h2 span{
+		color: $grey;
+	}
 }
 
 
 
 
-/* text */
+/* text  and fonts */
 
 .yellow-bold-text{
 	color: $yellow;
 	font-weight: 400;
 }
 
+h2, h3, h4, h5{	
+	font-family: $headingfont;
+}
 
+h2{
+	font-size: 36px;
+	line-height: 70px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: white;
+}
+
+h3{
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 300;
+	color: white;
+}
+
+h4{
+	font-size: 14pt;
+	font-weight: 600;
+	line-height: 25pt;
+	color: $darkgrey;
+}
+
+h5{
+	font-size: 11pt;
+	font-weight: 400;
+	line-height: 18pt;
+	color: $lightgrey;
+}
+
+
+
+
+/* Others */
 .clearfix{
 	clear: both;
 }

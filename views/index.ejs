@@ -3,11 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Lorem Studio</title>
-	<link rel="stylesheet" href="/stylesheets/style.css">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+	<% include ../views/partials/head %>
 
 </head>
 <body>
@@ -35,30 +31,30 @@
 		<h3>We are <span class="yellow-bold-text">creative people</span> with 5 years experiences in <span class="yellow-bold-text">web</span> and <span class="yellow-bold-text">mobile app development</span>. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempori.</h3>
 		<div class="services">
 			<div id="many-variations">
-				<img src="">
+				<img src="/images/variations.png">
 				<h4>Many Variations</h4>
 				<h5> Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</h5>
 			</div>
 
 			<div id="on-time">
-				<img src="">
+				<img src="/images/on-time.png">
 				<h4>On Time</h4>
 				<h5> Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</h5>
 			</div>
 
 			<div id="unlimited-revisions">
-				<img src="">
+				<img src="/images/revisions.png">
 				<h4>Unlimited Revisions</h4>
 				<h5> Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</h5>
 			</div>
 
 			<div id="retina-ready">
-				<img src="">
+				<img src="/images/retina.png">
 				<h4>Retina Display</h4>
 				<h5> Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</h5>
 			</div>
 			<div id="full-support">
-				<img src="">
+				<img src="images/support.png">
 				<h4>Full Support</h4>
 				<h5> Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</h5>
 			</div>
@@ -67,8 +63,13 @@
 		<div class="clearfix"></div>
 	</div>
 	<div class="featured-projects">
-		<h2>Awesome Works</h2>
+		<h2>Awesome <span>Works</span></h2>
 		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</h3>
+		<div class="filter-projects">
+			<% filters.forEach(function(filter){ %>
+				<button><%= filter.name %></button>
+			<% }); %>
+		</div>
 
 
 		<button>Load More</button>

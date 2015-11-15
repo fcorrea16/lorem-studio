@@ -29,8 +29,19 @@ var sass = require('node-sass');
 // == ROUTES ==
 
 app.get('/', function (req, res) {
+
+	var filters = [
+        { name: 'Html', id: 1 },
+        { name: 'Joomla', id: 2 },
+        { name: 'Wordpress', id: 3 },
+        { name: 'Opencart', id: 4 },
+        { name: 'Logo', id: 5 },
+        { name: 'Print', id: 6 }
+    ];
+
   res.render('index', {
-  	title: 'hello'
+  	title: 'Lorem Studio',
+  	filters: filters
   });
 });
 
