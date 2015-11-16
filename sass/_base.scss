@@ -1,38 +1,69 @@
+/* Colors
+   ========================================================================== */
 
-/* colors */
 $darkgrey: #3f3f3f;
 $yellow: #f9c741;
 $darkgrey: #555555;
 $grey: #3f3f3f;
 $lightgrey: #999999;
-
 @import 'typography';
 
+/* Basic All Pages
+   ========================================================================== */
 
-html, body { overflow-x: hidden; }
+html, body {
+  overflow-x: hidden;
+}
+
 .row {
   padding-right: 0px;
   margin-right: 0px;
 }
 
-
-
 body .container-fluid {
-	padding-right: 0px;
-	padding-left: 0px;
-	text-align: center;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
 }
 
 
+/* Buttons 
+   ========================================================================== */
 
-	.btn {
-		height: 50px;
-		border-radius: 40px;
-		background-color: $yellow;
-		color: white;
-		$font-family: $raleway;
-		font-size: 12px;
-		font-weight: 800;
-		line-height: 25px;
+.btn {
+  height: 50px;
+  border-radius: 40px;
+  background-color: $yellow;
+  color: white;
+  $font-family: $raleway;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 25px;
+}
 
-	}
+.btn:hover, .btn:focus {
+  background-color: $lightgrey;
+  color: white;
+  outline: none;
+}
+
+
+/* Form
+   ========================================================================== */
+
+form input, textarea {
+  color: white;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+
+form input:focus, .form-control:focus {
+  -moz-box-shadow: 0 0 8px $lightgrey;
+  -webkit-box-shadow: 0 0 8px $lightgrey;
+  box-shadow: 0 0 8px $lightgrey;
+  border: 5px solid $lightgrey;
+  color: $yellow;
+}
