@@ -76,8 +76,9 @@
 </div>
 
 		<div>
+			<button class="all-works">All Works</button>
 			<% filters.forEach(function(filter){ %>
-				<button><%= filter.name %></button>
+				<button class="filter"><%= filter.name %></button>
 			<% }); %>
 		</div>
 	</div>
@@ -91,18 +92,21 @@
 		</div>
 
 		<button>Load More</button>
+
+
 	</div>
 
 	<div id="map"></div>
 
 	<div class="contact">
-		<h2>Get in <span class="yellow-text">Touch</span></h2>
-		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</h3>
+		<h2 >Get in <span class="yellow-text">Touch</span></h2>
+		<h3 class="col-md-10 col-md-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</h3>
 
-		<form action="/formulario" method="post" class="row">
-			<input type="text" class="form-control col-sm-6" name="fullname" placeholder="Full Name">
-	    <input type="text" class="form-control col-sm-6" name="email" placeholder="Email">
-	    <br>
+		<div class="row">
+		<form action="/formulario" method="post">
+
+			<input type="text" class="form-control " name="fullname" placeholder="Full Name">
+	    <input type="text" class="form-control" name="email" placeholder="Email">
 	    <input type="text" class="form-control" name="website" placeholder="Website">
 	    <input type="text" class="form-control" name="security_code" placeholder="7 + 8">
 	    <br>
@@ -110,30 +114,31 @@
 	    <br>
 	    <button type="submit" class="btn  btn-lg">Send Now</button> 
 	  </form>
+	  </div>
 
 		<div class="contact-info">
-			<div class="icon">
+			<div class="icon col-md-2 col-ms-offset-1">
 				<img src="/images/envelope.png">
 				<h6>info@cocostudio.com</h6>
 			</div>
 
-			<div class="icon">
+			<div class="icon col-md-2 ">
 				<img src="/images/envelope.png">
 				<h6>sales@cocostudio.com</h6>
 			</div>
 
-			<div class="icon">
+			<div class="icon col-md-2 ">
 				<img src="/images/location.svg">
 				<h6>Bukir Gadingrejo 123<br>
 				Pasuruan Indonesia 654321</h6>
 			</div>
 
-			<div class="icon">
+			<div class="icon col-md-2 ">
 				<img src="/images/phone.svg">
 				<h6>+62 - 0343 - 1234567</h6>
 			</div>
 
-			<div class="icon">
+			<div class="icon col-md-2 ">
 				<img src="/images/mundo.png">
 				<h6>www.cocostudio.com</h6>
 			</div>
@@ -143,7 +148,7 @@
 	</div>
 
 	<footer>
-		<div class="social">
+		<div class="social col-md-6 col-md-offset-3">
 			<a href="#"><i class="fa fa-twitter fa-3x"></i></a>
 			<a href="#"><i class="fa fa-facebook fa-3x"></i></a>
 			<a href="#"><i class="fa fa-google-plus fa-3x"></i></a>

@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -457,6 +457,31 @@ body .container-fluid {
   height: 1100px; }
   .featured-projects h2 span {
     color: #3f3f3f; }
+  .featured-projects h3 {
+    color: white;
+    margin-bottom: 60px;
+    font-weight: 300; }
+
+button {
+  font: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 1px; }
+
+button.filter, button.all-works {
+  background-color: #f9c741;
+  color: white;
+  padding: 10px 25px;
+  border: solid 2px white;
+  border-radius: 35px;
+  margin: 0px 10px;
+  text-transform: uppercase; }
+
+.selected-filter {
+  color: #f9c741;
+  background-color: #3f3f3f;
+  border: solid 2px #3f3f3f; }
 
 #map {
   width: 100%;
@@ -467,11 +492,11 @@ body .container-fluid {
   width: 100%;
   background-color: #3f3f3f;
   padding-top: 135px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  text-align: center; }
 
 .contact h3 {
-  /*width: 760px;*/
-  margin: 0px auto; }
+  margin-bottom: 73px; }
 
 .contact form {
   /*width: 1000px;*/
