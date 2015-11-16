@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -358,199 +358,8 @@ td,
 th {
   padding: 0; }
 
+/* ESSENTIALS */
 /* colors */
-/* fonts */
-body .container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
-  text-align: center; }
-
-#top-content .intro-image img {
-  width: 100%; }
-
-.navigation {
-  height: 87px;
-  background-color: #555555;
-  margin: 0px; }
-  .navigation ul {
-    padding: 0px;
-    padding: 0px 5%;
-    text-align: center; }
-    .navigation ul li {
-      text-align: center;
-      color: white;
-      font-family: "Open Sans", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      list-style-type: none; }
-      .navigation ul li img {
-        padding: 0px;
-        margin: 0px; }
-
-.lorem-logo-xs {
-  display: none; }
-
-@media (max-width: 992px) {
-  .navigation .col-sm-2, .navigation .col-sm-1 {
-    padding-left: 0px;
-    padding-right: 0px; }
-  .navigation .facts {
-    margin-left: -15px; }
-  .navigation ul li {
-    font-size: 12px; }
-  .navigation ul {
-    padding: 0; } }
-
-@media (max-width: 767px) {
-  .navigation {
-    height: 87px; }
-  .navigation ul li {
-    font-size: 13px;
-    padding-top: 8px; }
-  .lorem-logo-sm {
-    display: none; }
-  .navigation ul .lorem-logo-xs {
-    display: block;
-    padding-top: 0; }
-  .navigation .facts {
-    margin-left: 0px; } }
-
-/* ABOUT */
-.about {
-  background-color: #eff3f3;
-  padding: 8% 5%; }
-
-.services div {
-  padding-top: 110px; }
-
-.services img {
-  margin-bottom: 30px; }
-
-.services h4 {
-  margin-bottom: 15px; }
-
-#unlimited-revisions {
-  padding-top: 65px; }
-  #unlimited-revisions img {
-    margin-bottom: 62px; }
-
-@media (max-width: 767px) {
-  .about {
-    padding-top: 20%; }
-  h3 {
-    line-height: 33pt; }
-  .services {
-    padding: 0px 15%; }
-  .services img {
-    margin-bottom: 0px; }
-  .service {
-    margin-top: 50px; }
-  .service h4 {
-    margin-bottom: 0px; } }
-
-/* FEATURED PROJECTS */
-.featured-projects {
-  background-color: #f9c741;
-  width: 100%;
-  padding-top: 145px;
-  height: 1100px; }
-  .featured-projects h2 span {
-    color: #3f3f3f; }
-  .featured-projects h3 {
-    color: white;
-    margin-bottom: 60px;
-    font-weight: 300; }
-
-button {
-  font: "Open Sans", sans-serif;
-  font-size: 12px;
-  line-height: 22px;
-  font-weight: 600;
-  letter-spacing: 1px; }
-
-button.filter, button.all-works {
-  background-color: #f9c741;
-  color: white;
-  padding: 10px 25px;
-  border: solid 2px white;
-  border-radius: 35px;
-  margin: 0px 10px;
-  text-transform: uppercase; }
-
-.selected-filter {
-  color: #f9c741;
-  background-color: #3f3f3f;
-  border: solid 2px #3f3f3f; }
-
-#map {
-  width: 100%;
-  height: 800px; }
-
-/* CONTACT */
-.contact {
-  width: 100%;
-  background-color: #3f3f3f;
-  padding-top: 135px;
-  padding-bottom: 80px;
-  text-align: center; }
-
-.contact h3 {
-  margin-bottom: 73px; }
-
-.contact form {
-  /*width: 1000px;*/
-  margin: 0px auto; }
-  .contact form input {
-    border: 5px solid white;
-    border-radius: 40px;
-    background-color: #3f3f3f;
-    padding: 15px;
-    font-size: 13px; }
-    .contact form input #placeholder {
-      color: white; }
-
-.contact-info .icon {
-  float: left;
-  /*width: 20%;*/ }
-
-.contact-info .icon img {
-  height: 40px; }
-
-/* footer */
-footer {
-  height: 173px;
-  width: 100%;
-  background-color: #f9c741;
-  vertical-align: middle; }
-
-footer .social {
-  height: 103px;
-  width: 100%;
-  background-color: #f9c741;
-  vertical-align: middle;
-  padding-top: 70px; }
-
-footer i {
-  margin-right: 55px;
-  color: white; }
-
-footer i:hover {
-  color: #3f3f3f;
-  cursor: pointer; }
-
-footer .white-bar {
-  height: 12px;
-  color: white; }
-
-/* text  and fonts */
-.yellow-bold-text {
-  color: #f9c741;
-  font-weight: 400; }
-
-.yellow-text {
-  color: #f9c741; }
-
 h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif; }
 
@@ -588,6 +397,34 @@ h6 {
   color: white;
   font-family: "Open Sans", sans-serif; }
 
+.yellow-bold-text {
+  color: #f9c741;
+  font-weight: 400; }
+
+.yellow-text {
+  color: #f9c741; }
+
+html, body {
+  overflow-x: hidden; }
+
+.row {
+  padding-right: 0px;
+  margin-right: 0px; }
+
+body .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center; }
+
+.btn {
+  height: 50px;
+  border-radius: 40px;
+  background-color: #f9c741;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 25px; }
+
 /* Others */
 .clearfix {
   clear: both; }
@@ -603,3 +440,205 @@ h6 {
 
 .padding-top-40 {
   padding-top: 40px; }
+
+.margin-right-20 {
+  margin-right: 20px; }
+
+#top-content .intro-image img {
+  width: 100%; }
+
+.navigation {
+  height: 87px;
+  background-color: #555555;
+  margin: 0px; }
+  .navigation ul {
+    padding: 0px;
+    padding: 0px 5%;
+    text-align: center; }
+    .navigation ul li {
+      text-align: center;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      list-style-type: none; }
+      .navigation ul li img {
+        padding: 0px;
+        margin: 0px; }
+
+.lorem-logo-xs {
+  display: none; }
+
+@media (max-width: 992px) {
+  .navigation .col-sm-2, .navigation .col-sm-1 {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .navigation .facts {
+    margin-left: -15px; }
+  .navigation ul li {
+    font-size: 12px; }
+  .navigation ul {
+    padding: 0; } }
+
+@media (max-width: 767px) {
+  .navigation {
+    height: 87px; }
+  .navigation ul li {
+    font-size: 13px;
+    padding-top: 8px; }
+  .lorem-logo-sm {
+    display: none; }
+  .navigation ul .lorem-logo-xs {
+    display: block;
+    padding-top: 0; }
+  .navigation .facts {
+    margin-left: 0px; } }
+
+/* FOOTER SECTION */
+footer {
+  height: 173px;
+  background-color: #f9c741;
+  vertical-align: middle; }
+
+footer .social {
+  height: 103px;
+  background-color: #f9c741;
+  vertical-align: middle;
+  padding-top: 70px;
+  text-align: center; }
+
+footer i {
+  margin-right: 55px;
+  color: white; }
+
+footer i:hover {
+  color: #3f3f3f;
+  cursor: pointer; }
+
+footer .white-bar {
+  height: 12px;
+  color: white; }
+
+@media (max-width: 767px) {
+  footer .social {
+    height: 100%;
+    padding-bottom: 50px;
+    margin: 0px;
+    padding: 30px auto; }
+  footer i {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 15px; }
+  footer a:last-child i {
+    padding-right: 0px; } }
+
+/* SECTIONS */
+.about {
+  background-color: #eff3f3;
+  padding: 8% 5%; }
+
+.services div {
+  padding-top: 110px; }
+
+.services img {
+  margin-bottom: 30px; }
+
+.services h4 {
+  margin-bottom: 15px; }
+
+#unlimited-revisions {
+  padding-top: 65px; }
+  #unlimited-revisions img {
+    margin-bottom: 62px; }
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 20%; }
+  h3 {
+    line-height: 33pt; }
+  .services {
+    padding: 0px 15%; }
+  .services img {
+    margin-bottom: 0px; }
+  .service {
+    margin-top: 50px; }
+  .service h4 {
+    margin-bottom: 0px; } }
+
+/* CONTACT SECTION */
+#map {
+  width: 100%;
+  height: 800px; }
+
+.contact {
+  width: 100%;
+  background-color: #3f3f3f;
+  padding-top: 135px;
+  padding-bottom: 80px;
+  text-align: center; }
+
+.contact h3 {
+  margin-bottom: 73px; }
+
+.contact .row {
+  margin: 0px; }
+
+.contact-form {
+  padding: 20px; }
+  .contact-form input, .contact-form textarea {
+    border: 5px solid white;
+    border-radius: 40px;
+    background-color: #3f3f3f;
+    padding: 12px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    width: 100%; }
+    .contact-form input #placeholder, .contact-form textarea #placeholder {
+      color: white; }
+  .contact-form textarea {
+    width: 98%;
+    height: 240px;
+    margin: 0px auto 30px auto;
+    border-radius: 30px; }
+  .contact-form button {
+    width: 99%; }
+
+.contact-info {
+  margin-top: 87px; }
+  .contact-info .icon img {
+    height: 40px; }
+
+/* FEATURED PROJECTS SECTION */
+.featured-projects {
+  background-color: #f9c741;
+  width: 100%;
+  padding-top: 145px;
+  height: 1100px; }
+  .featured-projects h2 span {
+    color: #3f3f3f; }
+  .featured-projects h3 {
+    color: white;
+    margin-bottom: 60px;
+    font-weight: 300; }
+
+button {
+  font: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 1px; }
+
+button.filter, button.all-works {
+  background-color: #f9c741;
+  color: white;
+  padding: 10px 25px;
+  border: solid 2px white;
+  border-radius: 35px;
+  margin: 0px 10px;
+  text-transform: uppercase; }
+
+.selected-filter {
+  color: #f9c741;
+  background-color: #3f3f3f;
+  border: solid 2px #3f3f3f; }

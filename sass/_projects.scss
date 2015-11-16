@@ -1,0 +1,48 @@
+/* FEATURED PROJECTS SECTION */
+
+.featured-projects {
+	background-color: $yellow;
+	width: 100%;
+	padding-top: 145px;
+	height: 1100px;
+
+	h2 span{
+		color: $grey;
+	}
+
+	h3{
+		color: white;
+		margin-bottom: 60px;
+		font-weight: 300;
+	}
+}
+
+button{
+	font: $opensans;
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+
+button.filter, button.all-works{
+	background-color: $yellow;
+	color: white;
+	padding: 10px 25px;
+	border: solid 2px white;
+	border-radius: 35px;
+	margin: 0px 10px;
+	text-transform: uppercase;
+}
+
+.selected-filter{
+	color: $yellow;
+	background-color: $grey;
+	border: solid 2px $grey;
+}
+
+
+
+
+

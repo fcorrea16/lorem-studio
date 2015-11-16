@@ -1,0 +1,58 @@
+
+.about{
+	background-color: #eff3f3;
+	padding: 8% 5%;
+}
+
+.services div{
+	padding-top: 110px;
+}
+
+
+.services img{
+	margin-bottom: 30px;
+}
+
+
+.services h4{
+	margin-bottom: 15px;
+}
+
+#unlimited-revisions{
+	padding-top: 65px;
+	img{
+		margin-bottom: 62px;
+	}
+}
+
+
+
+@media (max-width: 767px) {
+	.about{
+		padding-top: 20%;
+	}
+
+	h3{
+		line-height: 33pt;
+	}
+
+	.services{
+		padding: 0px 15%;
+	}
+
+	.services img{
+		margin-bottom: 0px;
+	}
+
+	.service{
+		margin-top: 50px;
+	}
+
+	.service h4{
+		margin-bottom: 0px;
+	}
+
+}
+
+
+

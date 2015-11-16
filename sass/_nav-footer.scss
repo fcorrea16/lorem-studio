@@ -1,0 +1,145 @@
+
+#top-content .intro-image img{
+	width: 100%;
+}
+
+.navigation {
+	height: 87px;
+	background-color: $darkgrey;
+	margin: 0px;
+
+
+	ul{
+		padding: 0px;
+		padding: 0px 5%;
+		text-align: center;
+
+		li{
+			text-align: center;
+			color: white;
+			font-family: $opensans;
+			font-size: 10px;
+			font-weight: 700;
+			text-transform: uppercase;
+			list-style-type: none;
+
+			img{
+				padding: 0px;
+				margin: 0px;
+			}
+		}
+	}
+}
+
+.lorem-logo-xs {
+ 	display: none;
+}
+
+@media (max-width: 992px) {
+
+	.navigation .col-sm-2, .navigation .col-sm-1 {
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+
+	.navigation .facts{
+		margin-left: -15px;
+
+	}
+
+  .navigation ul li {
+  	font-size: 12px;
+  }
+  	.navigation ul {
+		padding: 0;
+	}
+
+}
+
+
+
+@media (max-width: 767px) {
+
+	.navigation{
+		height: 87px;
+	}
+
+
+  .navigation ul li {
+  	font-size: 13px;
+  	padding-top: 8px;
+  }
+  .lorem-logo-sm{
+  	display: none;
+  }
+
+  .navigation ul .lorem-logo-xs {
+  	display: block;
+  	padding-top: 0; 
+  }
+
+  	.navigation .facts{
+		margin-left: 0px;
+
+	}
+}
+
+
+
+
+/* FOOTER SECTION */
+
+
+footer{
+	height: 173px;
+	background-color: $yellow;
+	vertical-align: middle;
+}
+
+footer .social{
+	height: 103px;
+	background-color: $yellow;
+	vertical-align: middle;
+	padding-top: 70px;
+	text-align: center;
+}
+
+footer i {
+	margin-right: 55px;
+	color: white;
+}
+
+
+footer i:hover {
+	color: $grey;
+	cursor: pointer;
+}
+
+footer .white-bar{
+	height: 12px;
+	color: white;
+}
+
+
+
+@media (max-width: 767px) {
+footer .social{
+	height: 100%;
+	padding-bottom: 50px;
+	margin: 0px;
+	padding: 30px auto;
+}
+
+footer i {
+	margin: 0px;
+	padding: 0px;
+	padding-right: 15px;
+}
+
+footer a:last-child i {
+	padding-right: 0px;
+}
+
+}
+
+
