@@ -3,7 +3,8 @@ var express = require('express');
 var morgan  = require('morgan');
 var app     = express();
 var port    = 3000;
-var methodOverride = require('method-override')
+var methodOverride = require('method-override');
+
 
 var mongoose = require('mongoose');
 
@@ -37,7 +38,7 @@ app.get('/', function (req, res) {
         { name: 'Opencart', id: 4 },
         { name: 'Logo', id: 5 },
         { name: 'Print', id: 6 }
-        
+
     ];
 
   res.render('index', {

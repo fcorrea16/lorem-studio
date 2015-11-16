@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
-@import 'reset';
+@import 'normalize';
 
 
 /* colors */
@@ -12,22 +12,21 @@ $lightgrey: #999999;
 
 
 /* fonts */
-$navFont: 'Open Sans', sans-serif;
-$navFontSize: 10pt;
+$opensans: 'Open Sans', sans-serif;
+$opensansSize10: 14px;
 
-$headingfont: 'Raleway', sans-serif;
-$sizeH3: 18pt;
-$lineHeightH3: 36pt;
+$raleway: 'Raleway', sans-serif;
 
-
+$basesize: 13px;
 
 
 
 
 
-body {
-	margin: 0px;
-	padding: 0px;
+body .container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+	text-align: center;
 }
 
 
@@ -35,44 +34,91 @@ body {
 	width: 100%;
 }
 
-#top-content .intro-image{
-	margin-bottom: -3px;
-}
-
-.navigation .lorem-logo{
-	position: relative;
-}
-
-.navigation .lorem-logo-space{
-	margin: 0px 20px;
-}
-
 .navigation {
 	height: 87px;
 	background-color: $darkgrey;
-	text-align: center;
+	margin: 0px;
 
-	ul {
-		margin: 0px;
+
+	ul{
 		padding: 0px;
-		margin-top: -120px;
-
+		padding: 0px 5%;
+		text-align: center;
 
 		li{
-			display: inline-block;
-			list-style: none;
+			text-align: center;
 			color: white;
-			font-family: $navFont;
-			font-size: $navFontSize;
-			line-height: 70pt;
+			font-family: $opensans;
+			font-size: $opensansSize10;
 			font-weight: 700;
-			letter-spacing: 1px;
-			padding-left: 17px;
-			padding-right: 17px;
 			text-transform: uppercase;
+			list-style-type: none;
+
+			img{
+				padding: 0px;
+				margin: 0px;
+			}
 		}
 	}
 }
+
+.lorem-logo-xs {
+ 	display: none;
+}
+
+@media (max-width: 992px) {
+
+	.navigation .col-sm-2, .navigation .col-sm-1 {
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+
+	.navigation .facts{
+		margin-left: -15px;
+
+	}
+
+  .navigation ul li {
+  	font-size: 12px;
+  }
+  	.navigation ul {
+		padding: 0;
+	}
+
+}
+
+
+
+@media (max-width: 767px) {
+
+	.navigation{
+		height: 87px;
+	}
+
+
+  .navigation ul li {
+  	font-size: 13px;
+  	padding-top: 8px;
+  }
+  .lorem-logo-sm{
+  	display: none;
+  }
+
+  .navigation ul .lorem-logo-xs {
+  	display: block;
+  	padding-top: 0; 
+  }
+
+  	.navigation .facts{
+		margin-left: 0px;
+
+	}
+}
+
+
+
+
+
 
 
 
@@ -81,24 +127,11 @@ body {
 
 .about{
 	background-color: #eff3f3;
-	padding: 10% 5%;
-
-	h3{
-		font-size: $sizeH3;
-		line-height: $lineHeightH3;
-		color: $darkgrey;
-		font-family: $headingfont;
-		text-align: center;
-		font-weight: 300;
-	}
+	padding: 8% 5%;
 }
 
 .services div{
-	float: left;
-	width: 17%;
 	padding-top: 110px;
-	text-align: center;
-	margin-right: 3%;
 }
 
 
@@ -111,6 +144,47 @@ body {
 	margin-bottom: 15px;
 }
 
+#unlimited-revisions{
+	padding-top: 65px;
+	img{
+		margin-bottom: 62px;
+	}
+}
+
+
+
+@media (max-width: 767px) {
+	.about{
+		padding-top: 20%;
+	}
+
+	h3{
+		line-height: 33pt;
+	}
+
+	.services{
+		padding: 0px 15%;
+	}
+
+	.services img{
+		margin-bottom: 0px;
+	}
+
+	.service{
+		margin-top: 50px;
+	}
+
+	.service h4{
+		margin-bottom: 0px;
+	}
+
+}
+
+
+
+
+
+
 
 
 /* FEATURED PROJECTS */
@@ -118,8 +192,8 @@ body {
 .featured-projects {
 	background-color: $yellow;
 	width: 100%;
+	padding-top: 145px;
 	height: 1100px;
-	text-align: center;
 
 	h2 span{
 		color: $grey;
@@ -136,6 +210,91 @@ body {
 }
 
 
+/* CONTACT */
+
+
+.contact{
+	width: 100%;
+	background-color: $grey;
+	padding-top: 135px;
+	padding-bottom: 80px;
+}
+
+.contact h3{
+	/*width: 760px;*/
+	margin: 0px auto;
+}
+
+
+.contact form{
+	/*width: 1000px;*/
+	margin: 0px auto;
+
+	input {
+		border: 5px solid white;
+		border-radius: 40px;
+		background-color: $grey;
+		padding: 15px;
+		font-size: $basesize;
+		
+
+		#placeholder{
+			color: white;
+		}
+	}
+}
+
+
+
+.contact-info .icon {
+	float: left;
+	/*width: 20%;*/
+}
+
+
+.contact-info .icon img{
+	height: 40px;
+}
+
+
+
+
+
+/* footer */
+
+
+footer{
+	height: 173px;
+	width: 100%;
+	background-color: $yellow;
+	vertical-align: middle;
+}
+
+footer .social{
+	height: 103px;
+	width: 100%;
+	background-color: $yellow;
+	vertical-align: middle;
+	padding-top: 70px;
+}
+
+footer i {
+	margin-right: 55px;
+	color: white;
+}
+
+
+footer i:hover {
+	color: $grey;
+	cursor: pointer;
+}
+
+footer .white-bar{
+	height: 12px;
+	color: white;
+}
+
+
 
 /* text  and fonts */
 
@@ -144,8 +303,12 @@ body {
 	font-weight: 400;
 }
 
+.yellow-text{
+	color: $yellow;
+}
+
 h2, h3, h4, h5{	
-	font-family: $headingfont;
+	font-family: $raleway;
 }
 
 h2{
@@ -154,13 +317,15 @@ h2{
 	font-weight: 800;
 	text-transform: uppercase;
 	color: white;
+	margin-top: 0px;
 }
 
 h3{
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 22px;
+	line-height: 36px;
 	font-weight: 300;
-	color: white;
+	color: $lightgrey;
+	margin: 0px;
 }
 
 h4{
@@ -177,10 +342,36 @@ h5{
 	color: $lightgrey;
 }
 
+h6{
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+	color: white;
+	font-family: $opensans;
+
+}
+
 
 
 
 /* Others */
 .clearfix{
 	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
+.padding-right-15{
+	padding-right: 15px;
+}
+
+
+.padding-top-30 {
+	padding-top: 30px;
+}
+
+.padding-top-40 {
+	padding-top: 40px;
 }
