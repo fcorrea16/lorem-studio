@@ -361,6 +361,11 @@ th {
 /* ESSENTIALS */
 /* Colors
    ========================================================================== */
+h1 {
+  font-size: 55px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600; }
+
 h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif; }
 
@@ -489,7 +494,7 @@ form input:focus, .form-control:focus {
       text-align: center;
       color: white;
       font-family: "Open Sans", sans-serif;
-      font-size: 10px;
+      font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
       list-style-type: none; }
@@ -531,12 +536,10 @@ form input:focus, .form-control:focus {
    FOOTER
    ========================================================================== */
 footer {
-  height: 173px;
-  background-color: #f9c741;
   vertical-align: middle; }
 
 footer .social {
-  height: 103px;
+  height: 173px;
   background-color: #f9c741;
   vertical-align: middle;
   padding-top: 70px;
@@ -551,25 +554,28 @@ footer i:hover {
   cursor: pointer; }
 
 footer .white-bar {
-  height: 12px;
+  height: 15px;
   color: white; }
 
 /* Screen Size Adjustments
    ========================================================================== */
 @media (max-width: 767px) {
   footer .social {
-    height: 100%;
-    padding-bottom: 50px;
-    margin: 0px;
-    padding: 30px auto; }
+    padding-bottom: 50px; }
   footer i {
     margin: 0px;
     padding: 0px;
-    padding-right: 15px; }
-  footer a:last-child i {
-    padding-right: 0px; } }
+    padding-right: 15px; } }
 
 /* SECTIONS */
+h1 .text-yellow {
+  width: 660px;
+  height: 80px;
+  background-color: #3f3f3f; }
+
+.text-yellow {
+  width: 100%; }
+
 .about {
   background-color: #eff3f3;
   padding: 8% 5%; }
@@ -588,6 +594,15 @@ footer .white-bar {
   #unlimited-revisions img {
     margin-bottom: 62px; }
 
+@media (max-width: 991px) {
+  .services img {
+    max-width: 75px; }
+  #unlimited-revisions {
+    padding-top: 110px; }
+    #unlimited-revisions img {
+      margin-bottom: 30px;
+      width: 75px; } }
+
 @media (max-width: 767px) {
   .about {
     padding-top: 20%; }
@@ -601,6 +616,17 @@ footer .white-bar {
     margin-top: 50px; }
   .service h4 {
     margin-bottom: 0px; } }
+
+@media (max-width: 500px) {
+  .services div {
+    padding-top: 30px; }
+  .services {
+    padding: 0; }
+  #unlimited-revisions {
+    padding-top: 30px; }
+    #unlimited-revisions img {
+      margin-bottom: 0px;
+      width: 75px; } }
 
 /* ==========================================================================
    CONTACT SECTION

@@ -1,4 +1,12 @@
+h1 .text-yellow{
+	width: 660px;
+	height: 80px;
+	background-color: $grey;
+}
 
+.text-yellow{
+	width: 100%;
+}
 .about{
 	background-color: #eff3f3;
 	padding: 8% 5%;
@@ -21,11 +29,31 @@
 #unlimited-revisions{
 	padding-top: 65px;
 	img{
+
 		margin-bottom: 62px;
 	}
 }
 
 
+
+
+@media (max-width: 991px) {
+.services img{
+		max-width: 75px;
+	}
+
+#unlimited-revisions{
+	padding-top: 110px;
+	img{
+		margin-bottom: 30px;
+		width: 75px;
+	}
+
+	
+
+}
+
+}
 
 @media (max-width: 767px) {
 	.about{
@@ -51,6 +79,27 @@
 	.service h4{
 		margin-bottom: 0px;
 	}
+
+
+}
+
+@media (max-width: 500px) {
+	
+	.services div{
+		padding-top: 30px;
+	}
+
+	.services {
+		padding: 0;
+	}
+	
+	#unlimited-revisions{
+	padding-top: 30px;
+	img{
+		margin-bottom: 0px;
+		width: 75px;
+	}
+}
 
 }
 
