@@ -24,6 +24,7 @@ app.set('view engine', 'ejs'); // set up ejs for templating
 var sass = require('node-sass');
 
 
+
 // == ROUTES ==
 app.get('/', function (req, res) {
 	var filters = [
@@ -42,6 +43,8 @@ app.get('/', function (req, res) {
   });
   
 });
+
+
 
 //  Não consegui botar a galerria como html parcial na pagina index:
 app.use('/projects', require('node-gallery')({
