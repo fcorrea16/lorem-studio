@@ -2,7 +2,7 @@
 var express = require('express');
 var morgan  = require('morgan');
 var app     = express();
-var port    = 3000;
+var port    = process.env.PORT || 3000;
 var methodOverride = require('method-override');
 
 
@@ -62,10 +62,8 @@ app.use('/projects', require('node-gallery')({
 
 // == SERVER ==
 
-  var server = app.listen(port, function() {
-    console.log('listening on port ' + port)
-
-  });
+app.listen(port);
+console.log('The magic happens on port ' + port);
 
 
 
