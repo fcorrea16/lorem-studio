@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -426,19 +427,36 @@ body .container-fluid {
 
 /* Buttons 
    ========================================================================== */
-.btn {
+.btn, .btn-grey {
   height: 50px;
   border-radius: 40px;
-  background-color: #f9c741;
-  color: white;
   font-size: 12px;
   font-weight: 800;
-  line-height: 25px; }
+  line-height: 25px;
+  transition: all 0.6s ease 0s; }
+
+.btn {
+  background-color: #f9c741;
+  color: white; }
+
+.btn-grey {
+  background-color: #555555;
+  color: #f9c741;
+  padding: 12px 47px 21px 47px; }
 
 .btn:hover, .btn:focus {
   background-color: #999999;
-  color: white;
+  color: #555555;
   outline: none; }
+
+button {
+  font: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  outline: none;
+  transition: all 0.6s ease 0s; }
 
 /* Form
    ========================================================================== */
@@ -475,6 +493,15 @@ form input:focus, .form-control:focus {
 
 .margin-right-20 {
   margin-right: 20px; }
+
+.margin-top-75 {
+  margin-top: 75px; }
+
+.showProjectLorem {
+  display: block; }
+
+.hideProjectLorem {
+  display: none; }
 
 /* ==========================================================================
    NAVIGATION
@@ -596,7 +623,7 @@ h1 .text-yellow {
 
 @media (max-width: 991px) {
   .services img {
-    max-width: 75px; }
+    max-height: 75px; }
   #unlimited-revisions {
     padding-top: 110px; }
     #unlimited-revisions img {
@@ -610,12 +637,20 @@ h1 .text-yellow {
     line-height: 33pt; }
   .services {
     padding: 0px 15%; }
+  .services div {
+    padding-top: 60px; }
   .services img {
     margin-bottom: 0px; }
   .service {
     margin-top: 50px; }
   .service h4 {
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+  #retina-ready {
+    min-height: 300px; }
+  #unlimited-revisions {
+    padding-top: 60px; }
+    #unlimited-revisions img {
+      margin-bottom: 0px; } }
 
 @media (max-width: 500px) {
   .services div {
@@ -675,6 +710,12 @@ h1 .text-yellow {
   .contact-info .icon img {
     height: 40px; }
 
+.contact-info h6 a {
+  color: white; }
+
+.contact-info h6 a:hover {
+  color: #f9c741; }
+
 /* Screen Size Adjustments
    ========================================================================== */
 @media (max-width: 991px) {
@@ -690,20 +731,13 @@ h1 .text-yellow {
   background-color: #f9c741;
   width: 100%;
   padding-top: 145px;
-  height: 1100px; }
+  padding-bottom: 100px; }
   .featured-projects h2 span {
     color: #3f3f3f; }
   .featured-projects h3 {
     color: white;
-    margin-bottom: 60px;
-    font-weight: 300; }
-
-button {
-  font: "Open Sans", sans-serif;
-  font-size: 12px;
-  line-height: 22px;
-  font-weight: 600;
-  letter-spacing: 1px; }
+    font-weight: 300;
+    margin-bottom: 30px; }
 
 button.filter, button.all-works {
   background-color: #f9c741;
@@ -712,9 +746,25 @@ button.filter, button.all-works {
   border: solid 2px white;
   border-radius: 35px;
   margin: 0px 10px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 30px; }
 
-.selected-filter {
+/* botão selecionado */
+.filters .selected-filter {
   color: #f9c741;
   background-color: #3f3f3f;
   border: solid 2px #3f3f3f; }
+
+.images-projects {
+  margin-top: 48px; }
+  .images-projects .col-sm-2 {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .images-projects .col-sm-2 img {
+      width: 100%;
+      max-height: 250px;
+      border-radius: 15px;
+      margin: 11px 0px; }
+
+.column-filter img {
+  width: 100%; }

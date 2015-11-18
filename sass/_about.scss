@@ -39,7 +39,7 @@ h1 .text-yellow{
 
 @media (max-width: 991px) {
 .services img{
-		max-width: 75px;
+		max-height: 75px;
 	}
 
 #unlimited-revisions{
@@ -68,6 +68,10 @@ h1 .text-yellow{
 		padding: 0px 15%;
 	}
 
+	.services div{
+		padding-top: 60px;
+	}
+
 	.services img{
 		margin-bottom: 0px;
 	}
@@ -79,6 +83,17 @@ h1 .text-yellow{
 	.service h4{
 		margin-bottom: 0px;
 	}
+
+	#retina-ready{
+		min-height: 300px;
+	}
+
+	#unlimited-revisions{
+		padding-top: 60px;
+	img{
+		margin-bottom: 0px;
+	}
+}
 
 
 }
@@ -99,6 +114,8 @@ h1 .text-yellow{
 		margin-bottom: 0px;
 		width: 75px;
 	}
+
+
 }
 
 }

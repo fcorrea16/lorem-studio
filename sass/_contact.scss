@@ -60,6 +60,13 @@
   }
 }
 
+.contact-info h6 a {
+  color: white; 
+}
+
+.contact-info h6 a:hover {
+  color: $yellow;
+}
 
 /* Screen Size Adjustments
    ========================================================================== */

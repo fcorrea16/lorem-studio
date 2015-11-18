@@ -23,3 +23,15 @@
 .margin-right-20{
 	margin-right: 20px;
 }
+
+.margin-top-75{
+	margin-top: 75px;
+}
+
+.showProjectLorem {
+	display: block;
+}
+
+.hideProjectLorem {
+	display: none;
+}

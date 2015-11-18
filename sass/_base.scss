@@ -30,22 +30,48 @@ body .container-fluid {
 /* Buttons 
    ========================================================================== */
 
-.btn {
+.btn, .btn-grey{
   height: 50px;
   border-radius: 40px;
-  background-color: $yellow;
-  color: white;
   $font-family: $raleway;
   font-size: 12px;
   font-weight: 800;
   line-height: 25px;
+  transition: all 0.6s ease 0s;
+}
+
+.btn {
+  background-color: $yellow;
+  color: white;
+}
+
+.btn-grey {
+  background-color: $darkgrey;
+  color: $yellow;
+  padding: 12px 47px 21px 47px;
+
 }
 
 .btn:hover, .btn:focus {
   background-color: $lightgrey;
-  color: white;
+  color: $darkgrey;
   outline: none;
 }
+
+button{
+  font: $opensans;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  outline: none;
+  transition: all 0.6s ease 0s;
+}
+
+
+
+
+
 
 
 /* Form

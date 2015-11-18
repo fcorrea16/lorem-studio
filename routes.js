@@ -5,12 +5,12 @@
 
 
 
-module.exports = function(app, passport) {
+// module.exports = function(app, passport) {
 
-    // -- HOME PAGE 
-    app.get('/', function(req, res) {
-        console.log(home)
-        res.render('index')
-    });
+//     // -- HOME PAGE 
+//     app.get('/', function(req, res) {
+//         console.log(home)
+//         res.render('index')
+//     });
 
-};
+// };
