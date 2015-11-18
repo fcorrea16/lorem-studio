@@ -1,73 +1,58 @@
 
-  // other functions when document is ready
+$(document).ready(function() {
+
+  if ($(window).width() < 767) {
+    $('.padding-top-30').addClass('none');
+    $('.padding-top-30').removeClass('padding-top-30');
+  } else {
+      $('.none').addClass('padding-top-30');
+      $('.padding-top-30').removeClass('none');
+  };
 
 
-$(document).ready( function(){
+  $('.button').on('click', function(e) {
+    e.preventDefault();
+  })
 
-		if ($(window).width() < 767) {
-  	$('.padding-top-30').addClass('none');
-	   $('.padding-top-30').removeClass('padding-top-30');
+  $('.btn').on('click', function(e) {
+    e.preventDefault();
+  })
 
-		} else {
-			$('.none').addClass('padding-top-30');
-	  	$('.padding-top-30').removeClass('none');
-		}
+  $('.filter').on('click', filtros);
 
-			$('.button').on('click', function(e){
-			e.preventDefault();
-	})
-
-	$('.btn').on('click', function(e){
-			e.preventDefault();
-	})
-
-		$('.filter').on('click', filtros);
+  $('.all-works').on('click', mostrarTodosProjetos);
 
 })
 
 
+// função todos os botões do filtro menos "all works"
+var filtros = function(e) {
+  e.preventDefault();
+  var clickedFilter = $(this).text();
+  $('.project').removeClass('showProjectLorem');
+  $('.project').addClass('hideProjectLorem');
 
-var filtros = function(e){
-	e.preventDefault();
-	
-	var clickedFilter = $(this).text();
+  var mostrarProjetoCorreto = function() {
+	  $(".project[data='" + clickedFilter + "']").removeClass('hideProjectLorem').addClass('showProjectLorem');
+	  filtroSelecionado();
+  }
 
-	var initialCount = $('.images-projects').children().length;
-	var projectsShown = $('.images-projects .showProjectLorem').length;
-	var projectsHidden = $('.images-projects .hideProjectLorem').length;
+  mostrarProjetoCorreto();
 
-	var hideProjects = function(){
-		$(".project[data!='" + clickedFilter + "']").addClass('	hideProjectLorem');
-		}
-
-
-
-	if ( projectsShown === 10){
-		console.log("hello1 " + clickedFilter);
-		$(".project[data!='" + clickedFilter + "']").removeClass('showProjectLorem').addClass('hideProjectLorem');
-
-	} else if ( clickedFilter === "All Works") {
-		console.log("hello2 ")
-		$('.hideProjectLorem').removeClass('hideProjectLorem');
-		$('.project').addClass('showProjectLorem');
-
-	} else {
-		console.log("hello3 ")
-		$('.hideProjectLorem').removeClass('hideProjectLorem');
-
-		$('.images-projects').children().addClass('showProjectLorem');
-		hideProjects();
-	}
-	
-
-
-	// addicionando css para botões filtros
-	$('.selected-filter').removeClass('selected-filter');
-	$(this).addClass('selected-filter');
 }
 
 
+// função botão "all works"
+var mostrarTodosProjetos = function(e) {
+  (console.log('hi'))
+  e.preventDefault();
+  $('.project').removeClass('hideProjectLorem');
+  $('.project').addClass('showProjectLorem');
+  filtroSelecionado();
+}
 
-
-
-  // $(window).resize(function () { /* do something */ });
+// addicionando css para botões filtros
+var filtroSelecionado = function() {
+  $('.selected-filter').removeClass('selected-filter');
+  $(this).addClass('selected-filter');
+}
