@@ -1,7 +1,7 @@
 {
   "name": "lorem-studio",
   "version": "1.0.0",
-  "description": "",
+  "description": "## O que é? Exercício baseado em um layout fictício.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
