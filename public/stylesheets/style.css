@@ -792,3 +792,6 @@ button.filter:hover {
 
 .column-filter img {
   width: 100%; }
+
+.images-projects img:hover {
+  transform: scale(1.05); }
