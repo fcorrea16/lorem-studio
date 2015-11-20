@@ -519,18 +519,36 @@ form input:focus, .form-control:focus {
     text-align: center; }
     .navigation ul li {
       text-align: center;
-      color: white;
-      font-family: "Open Sans", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
       list-style-type: none; }
+      .navigation ul li a {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase; }
       .navigation ul li img {
         padding: 0px;
-        margin: 0px; }
+        margin: 0px;
+        -webkit-box-shadow: 0px 5px 23px 0px rgba(50, 50, 50, 0.45);
+        -moz-box-shadow: 0px 5px 23px 0px rgba(50, 50, 50, 0.45);
+        box-shadow: 0px 5px 23px 0px rgba(50, 50, 50, 0.45);
+        border-radius: 0px 0px 7px 7px; }
 
 .lorem-logo-xs {
   display: none; }
+
+.navigation ul li a:hover {
+  color: #f9c741;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f9c741;
+  padding-top: 5px;
+  border-top: 1px solid #f9c741; }
+
+.navigation ul li img:hover {
+  -webkit-box-shadow: 0px 7px 18px 0px rgba(50, 50, 50, 0.71);
+  -moz-box-shadow: 0px 7px 18px 0px rgba(50, 50, 50, 0.71);
+  box-shadow: 0px 7px 18px 0px rgba(50, 50, 50, 0.71); }
 
 /* Screen Size Adjustments
    ========================================================================== */
@@ -748,6 +766,11 @@ button.filter, button.all-works {
   margin: 0px 10px;
   text-transform: uppercase;
   margin-top: 30px; }
+
+button.filter:hover {
+  background-color: white;
+  color: #f9c741;
+  border: solid 2px white; }
 
 /* botão selecionado */
 .filters .selected-filter {

@@ -8,7 +8,6 @@ var methodOverride = require('method-override');
 
 var mongoose = require('mongoose');
 
-
 // -- BODY PARSER --
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // get information from html forms

@@ -31,6 +31,14 @@ button.filter, button.all-works{
 	margin-top: 30px;
 }
 
+
+button.filter:hover{
+	background-color: white;
+	color: $yellow;
+	border: solid 2px white;
+}
+
+
 /* botão selecionado */
 .filters .selected-filter{
 	color: $yellow;
@@ -61,7 +69,6 @@ button.filter, button.all-works{
 .column-filter img{
 	width: 100%;
 }
-
 
 
 

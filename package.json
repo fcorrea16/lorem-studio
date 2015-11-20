@@ -20,6 +20,7 @@
     "body-parser": "^1.13.2",
     "ejs": "^2.3.4",
     "express": "^4.13.1",
+    "livereload-js": "^2.2.2",
     "method-override": "^2.3.4",
     "mongodb": "^2.0.48",
     "mongoose": "^4.2.5",
